@@ -20,11 +20,11 @@ jobs:
     steps:
     - name: Get PR Commits
       id: 'get-pr-commits'
-      uses: Tim-Zhang/get-pr-commits@master
+      uses: tim-actions/get-pr-commits@master
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
     - name: Commit Body Check
-      uses: Tim-Zhang/commit-body-check@master
+      uses: tim-actions/commit-body-check@master
       with:
         commits: ${{ steps.get-pr-commits.outputs.commits }
 
