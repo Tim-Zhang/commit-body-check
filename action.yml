@@ -1,0 +1,9 @@
+name: 'commit-body-check'
+description: 'A GitHub Action that verifies wheather commits have bodys'
+inputs:
+  commits:
+    description: 'commits in json format'
+    required: true
+runs:
+  using: 'node12'
+  main: 'index.js'
