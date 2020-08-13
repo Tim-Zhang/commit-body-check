@@ -3,7 +3,7 @@ const core = require('@actions/core')
 const helper = require('./libs/helper.js')
 
 
-const ErrorCommitBodyEmpty = 'Commit body is empty'
+const ErrorCommitBodyEmpty = 'Commit body is missing'
 
 async function main() {
   try {
